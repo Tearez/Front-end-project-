@@ -1,126 +1,207 @@
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
 .fa-2x {
-font-size: 2em;
+  font-size: 2em;
 }
+
 .fa {
-position: relative;
-display: table-cell;
-width: 60px;
-height: 36px;
-text-align: center;
-vertical-align: middle;
-font-size:20px;
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  margin-right: 15px;
 }
 
-
-.main-menu:hover,nav.main-menu.expanded {
-width:12%;
-overflow:visible;
+.main-menu:hover,
+nav.main-menu.expanded {
+  width: 190px;
+  overflow: visible;
 }
 
 .main-menu {
-background:#212121;
-border-right:1px solid #e5e5e5;
-position:absolute;
-top:0;
-bottom:0;
-height:100%;
-left:0;
-width:3%;
-overflow:hidden;
--webkit-transition:width .08s linear;
-transition:width .08s linear;
--webkit-transform:translateZ(0) scale(1,1);
-z-index:1000;
+  background: #212121;
+  border-right: 0.5px solid #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  width: 60px;
+  overflow: hidden;
+  -webkit-transition: width .08s linear;
+  transition: width .08s linear;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  z-index: 1000;
 }
 
 .main-menu>ul {
-margin:7px 0;
+  margin: 7px 0;
 }
 
 .main-menu li {
-position:relative;
-display:block;
-width:100%;
+  position: relative;
+  display: block;
+  width: 100%;
 }
 
 .main-menu li>a {
-position:relative;
-display:table;
-border-collapse:collapse;
-border-spacing:0;
-color:#999;
- font-family: arial;
-font-size: 14px;
-text-decoration:none;
--webkit-transform:translateZ(0) scale(1,1);
--webkit-transition:all .1s linear;
-transition:all .1s linear;
-  
+  position: relative;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #999;
+  font-family: arial;
+  text-decoration: none;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
 }
 
 .main-menu .nav-icon {
-position:relative;
-display:table-cell;
-width:60px;
-height:36px;
-text-align:center;
-vertical-align:middle;
-font-size:18px;
+  position: fixed;
+  display: table-cell;
+  widows: 60px;
+  height: 36px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 11px;
 }
 
 .main-menu .nav-text {
-position:relative;
-display:table-cell;
-vertical-align:middle;
-width:  190px;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+  width: 190px;
   font-family: 'Titillium Web', sans-serif;
 }
 
 .main-menu>ul.logout {
-position:absolute;
-left:0;
-bottom:0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .no-touch .scrollable.hover {
-overflow-y:hidden;
+  overflow-y: hidden;
 }
 
 .no-touch .scrollable.hover:hover {
-overflow-y:auto;
-overflow:visible;
+  overflow-y: auto;
+  overflow: visible;
 }
 
-a:hover,a:focus {
-text-decoration:none;
+a:hover,
+a:focus {
+  text-decoration: none;
 }
 
 nav {
--webkit-user-select:none;
--moz-user-select:none;
--ms-user-select:none;
--o-user-select:none;
-user-select:none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
-nav ul,nav li {
-outline:0;
-margin:0;
-padding:0;
+nav ul,
+nav li {
+  outline: 0;
+  margin: 0;
+  padding: 0;
 }
-.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
-color:#fff;
-background-color:#5fa2db;
+
+.main-menu li:hover>a,
+nav.main-menu li.active>a,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus,
+.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+.dashboard-page nav.dashboard-menu ul li.active a {
+  color: #fff;
+  background-color: #5fa2db;
 }
+
 .area {
-float: left;
-background: #e2e2e2;
-width: 100%;
-height: 100%;
+  float: left;
+  background: #e2e2e2;
+  width: 100%;
+  height: 100%;
 }
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  text-align: left;
+  background-color:  #3a3a3acb;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+#home-page .container-header {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.300),
+    rgba(0, 0, 0, 0.300)
+  ), url("C:/Users/Martin/Desktop/JS stuff/Project/business-chairs-company-7070.jpg");
+  background-size: 100% 100%;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+#home-page .container-header .content-header {
+  max-width: 100%;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  color: #5fa2db;
+text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.74),
+0px -5px 35px rgba(255, 255, 255, 0.342);
+}
+#home-page .content-info h2{
+  margin: 0;
+}
+#home-page .content-info {
+  display: block;
+  text-indent: 62px;
+  font-family: 'Roboto';
+  color: #0b5697;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+#home-page .content-footer {
+  display: block;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.300),
+    rgba(0, 0, 0, 0.300)
+  );
+  background-size: 100% 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  text-indent: 62px;
+  font-size: 25px;
+}
+
 @font-face {
   font-family: 'Titillium Web';
   font-style: normal;

@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>TO-DO Manager</title>
     <link rel="stylesheet" href="Styles/navBarStyle.css" type="text/css">
-    <style>
-        body {
-            background: #1852af;
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous" type="text/css">
 </head>
 
 <body>
@@ -19,26 +16,19 @@
     <nav class="main-menu">
         <ul>
             <li>
-                <a href="#">
-                    <i class="fa fa-info fa-2x"></i>
-                    <span class="nav-text">
+                <a id="home-button" href="#homepage">
+                    <div class="fa fa-home fa-2x">
+                    </div>
+                    <div class="nav-text">
                         Home
-                    </span>
+                    </div>
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <i class="fa fa-info fa-2x"></i>
+                <a id="todo-button" href="#todopage">
+                    <i class="fa fa-check-circle fa-2x"></i>
                     <span class="nav-text">
                         TO-DOs
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-info fa-2x"></i>
-                    <span class="nav-text">
-                        Tasks
                     </span>
                 </a>
             </li>
@@ -46,8 +36,16 @@
 
         <ul class="logout">
             <li>
-                <a href="#">
-                    <i class="fa fa-power-off fa-2x"></i>
+                <a id="login-button" href="">
+                    <i class="fa fa-sign-in fa-2x"></i>
+                    <span class="nav-text">
+                        Login
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a id="logout-button"  href="">
+                    <i class="fa fa-sign-out fa-2x"></i>
                     <span class="nav-text">
                         Logout
                     </span>
@@ -55,6 +53,39 @@
             </li>
         </ul>
     </nav>
+    <div id="home-page">
+        <header class="container-header">
+            <div class="content-header">
+                <h1>TO-DO Manager</h1>
+            </div>
+        </header>
+        <section class="content-info">
+            <h2>Do you have a problem managing all the task you have?</h2>
+            <div>
+                TO-DO Manager can solve all your problems!
+                Here you can manage all the task ahead of time.
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </div>
+        </section>
+        <footer class="content-footer">Made by a really cool dude!!</footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 </body>
