@@ -1,3 +1,4 @@
+/*
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
@@ -207,4 +208,43 @@ text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.74),
   font-style: normal;
   font-weight: 300;
   src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}*/
+
+@import "https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+html {
+  position: relative;
+  min-height: 100%;
 }
+body {
+  margin: 0 0 60px;
+}
+footer {
+  background-color: #F8F8F8;
+  border-top: 1px solid #E7E7E7;
+  text-align:center;
+  padding:20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+}
+.navbar-default .navbar-brand {
+  font-family: 'Open Sans', sans-serif;
+    color: 	#FF9966;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #9e9e9e 3px 2px 0;
+    position: relative;
+  }
+.navbar {
+  background-color: #999999
+}
+
+
