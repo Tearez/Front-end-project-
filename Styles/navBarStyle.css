@@ -243,8 +243,20 @@ footer {
     text-shadow: #9e9e9e 3px 2px 0;
     position: relative;
   }
+  .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand:visited {
+    color: 	#FF9966;
+  }
 .navbar {
   background-color: #999999
+}
+
+.tab {
+	display:none;
+}
+
+.tab.active {
+  margin-top: 50px;
+	display:block;
 }
 
 
