@@ -2,14 +2,16 @@
 html {
   position: relative;
   min-height: 100%;
+  width: 100%;
 }
 
 body {
   margin: 0 0 60px;
+  background-color: rgb(247, 247, 247);
 }
 
 footer {
-  background-color: #F8F8F8;
+  background-color: rgb(143, 143, 143);
   border-top: 1px solid #E7E7E7;
   text-align: center;
   padding: 20px;
@@ -20,17 +22,32 @@ footer {
   width: 100%;
 }
 
+.navbar-brand {
+  padding-top: 6px;
+}
+
+.metal {
+  background: -webkit-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: -moz-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: -ms-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: -o-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background-size: 10px 10px, 10px 10px, 100% 100%;
+  background-position: 1px 1px, 0px 0px, center center;
+}
+
 .navbar-default .navbar-brand {
   font-family: 'Open Sans', sans-serif;
   color: #c70000;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 38px;
   font-weight: 800;
   letter-spacing: -3px;
   line-height: 1;
   text-shadow: #9e9e9e 3px 2px 0;
   position: relative;
 }
+
 .navbar-default .navbar-brand span {
   font-family: 'Open Sans';
   color: #353535;
@@ -42,6 +59,7 @@ footer {
   text-shadow: #9e9e9e 3px 2px 0;
   position: relative;
 }
+
 .navbar-default .navbar-nav li a {
   font-family: 'Open Sans';
   color: #353535;
@@ -55,7 +73,7 @@ footer {
 }
 
 .navbar {
-  background-color: #999999
+  background-color: #999999;
 }
 
 .tab {
@@ -172,9 +190,7 @@ footer {
   padding: .8em 0;
   text-shadow: 0 1px #68B25B;
 }
-@import url(http://fonts.googleapis.com/css?family=Roboto);
 
-/****** LOGIN MODAL ******/
 .loginmodal-container {
   padding: 30px;
   max-width: 350px;
@@ -184,13 +200,13 @@ footer {
   border-radius: 2px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  font-family: roboto;
+  font-family: 'Open Sans';
 }
 
-.loginmodal-container h1 {
+.loginmodal-container .modal-header {
   text-align: center;
   font-size: 1.8em;
-  font-family: roboto;
+  font-family: 'Open Sans';
 }
 
 .loginmodal-container input[type=button] {
@@ -209,50 +225,45 @@ footer {
   background: #fff;
   border: 1px solid #d9d9d9;
   border-top: 1px solid #c0c0c0;
-  /* border-radius: 2px; */
+  border-radius: 2px;
   padding: 0 8px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
-.loginmodal-container input[type=text]:hover, input[type=text]:hover {
+.loginmodal-container input[type=text]:hover,
+input[type=text]:hover {
   border: 1px solid #b9b9b9;
   border-top: 1px solid #a0a0a0;
-  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .loginmodal {
   text-align: center;
   font-size: 14px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Open Sans';
   font-weight: 700;
   height: 36px;
   padding: 0 8px;
-/* border-radius: 3px; */
-/* -webkit-user-select: none;
-  user-select: none; */
+  border-radius: 3px;
 }
 
 .loginmodal-submit {
-  /* border: 1px solid #3079ed; */
   border: 0px;
   color: #fff;
-  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
   background-color: #4d90fe;
   padding: 17px 0px;
-  font-family: roboto;
+  font-family: 'Open Sans';
   font-size: 14px;
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
 }
 
 .loginmodal-submit:hover {
-  /* border: 1px solid #2f5bb7; */
   border: 0px;
-  text-shadow: 0 1px rgba(0,0,0,0.3);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   background-color: #357ae8;
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
 }
 
 .loginmodal-container a {
@@ -263,15 +274,66 @@ footer {
   display: inline-block;
   opacity: 0.6;
   transition: opacity ease 0.5s;
-} 
+}
+
 .tabs #tasks .table-hover {
   display: block;
   margin-top: 20px;
-  border: 1px solid #222;
-  border-radius: 15px;
+  border: 0px solid #222;
+  border-radius: 2px;
   max-height: 600px;
   overflow: auto;
 }
+
 thead th {
-  width: 33%;
+  width: 30%;
+  text-align: center;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+#task-submit {
+  background: #FF4545;
+  box-shadow: 0 3px 0 0 rgb(158, 45, 45);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2em;
+  display: block;
+  line-height: 1.6em;
+  text-shadow: 0 1px #68B25B;
+}
+
+.table {
+  font-family: 'Open Sans';
+}
+
+#tasks .container>button {
+  background: #FF4545;
+  box-shadow: 0 3px 0 0 rgb(158, 45, 45);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 2em;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.6em;
+  text-shadow: 0 1px #68B25B;
+}
+
+.table tbody tr td button {
+  background: #FF4545;
+  box-shadow: 0 3px 0 0 rgb(158, 45, 45);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.6em;
+  text-shadow: 0 1px #68B25B;
 }

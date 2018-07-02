@@ -14,7 +14,7 @@
 
 <body>
     <!-- navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-top metal" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -24,7 +24,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <div class="navbar-brand">Task Manager
+                <div class="navbar-brand">T M
                     <span></span>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                             <span class="glyphicon glyphicon-log-in"></span> Login</a>
                     </li>
                     <li style="display: none;">
-                        <a id="logout-b" href="#logout">LogOut</a>
+                        <a id="logout-b" href="#logout"><span class="glyphicon glyphicon-log-out"></span> LogOut</a>
                     </li>
                 </ul>
             </div>
@@ -123,181 +123,38 @@
 
         <div id="tasks" class="tab">
             <div class="container">
-                <a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                <button href="#" data-toggle="modal" data-target="#login-modal">New Task</button>
 
                 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                     <div class="modal-dialog">
                         <div class="loginmodal-container">
-                            <h1>Login to Your Account</h1>
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h2 class="modal-title">New Task</h4>
+                              </div>
                             <br>
                             <form>
-                                <input type="text" name="name" placeholder="Task Title">
-                                <input type="text" name="description" placeholder="Description">
+                                <input id="task-title" class="form-control" type="text" name="name" placeholder="Task Title">
+                                <input id="task-desc" class="form-control" type="text" name="description" placeholder="Description">
                                 <div class="form-group ">
                                     <input class="form-control" id="date" name="date" placeholder="Due Date (MM/DD/YYYY)" type="text" />
                                 </div>
-                                <input type="button" name="create" class="login loginmodal-submit" value="Create">
+                                <input id="task-submit" type="button" name="complete" class="login loginmodal-submit" value="Add Task">
                             </form>
                         </div>
                     </div>
                 </div>
 
-                <table class="table table-hover">
-                    <thead>
+                <table class="table table-hover ">
+                    <thead class="metal">
                         <tr>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th>Email</th>
-                            <th>Complete</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Due Date</th>
+                            <th>Completed?</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td>john@example.com</td>
-                        </tr>
-                        <tr>
-                            <td>Mary</td>
-                            <td>Moe</td>
-                            <td>mary@example.com</td>
-                        </tr>
-                        <tr>
-                            <td>July</td>
-                            <td>Dooley</td>
-                            <td>july@example.com</td>
-                        </tr>
-                        <tr>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>john@example.com</td>
-                            </tr>
-                            <tr>
-                                <td>Mary</td>
-                                <td>Moe</td>
-                                <td>mary@example.com</td>
-                            </tr>
-                            <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>july@example.com</td>
-                            </tr>
-                            <tr>
-                                    <td>John</td>
-                                    <td>Doe</td>
-                                    <td>john@example.com</td>
-                                </tr>
-                                <tr>
-                                    <td>Mary</td>
-                                    <td>Moe</td>
-                                    <td>mary@example.com</td>
-                                </tr>
-                                <tr>
-                                    <td>July</td>
-                                    <td>Dooley</td>
-                                    <td>july@example.com</td>
-                                </tr>
-                                <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td>john@example.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mary</td>
-                                        <td>Moe</td>
-                                        <td>mary@example.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>July</td>
-                                        <td>Dooley</td>
-                                        <td>july@example.com</td>
-                                    </tr>
-                                    <tr>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>john@example.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Mary</td>
-                                            <td>Moe</td>
-                                            <td>mary@example.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td>July</td>
-                                            <td>Dooley</td>
-                                            <td>july@example.com</td>
-                                        </tr>
-                                        <tr>
-                                                <td>John</td>
-                                                <td>Doe</td>
-                                                <td>john@example.com</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mary</td>
-                                                <td>Moe</td>
-                                                <td>mary@example.com</td>
-                                            </tr>
-                                            <tr>
-                                                <td>July</td>
-                                                <td>Dooley</td>
-                                                <td>july@example.com</td>
-                                            </tr><tr>
-                                                    <td>John</td>
-                                                    <td>Doe</td>
-                                                    <td>john@example.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Mary</td>
-                                                    <td>Moe</td>
-                                                    <td>mary@example.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>July</td>
-                                                    <td>Dooley</td>
-                                                    <td>july@example.com</td>
-                                                </tr><tr>
-                                                        <td>John</td>
-                                                        <td>Doe</td>
-                                                        <td>john@example.com</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Mary</td>
-                                                        <td>Moe</td>
-                                                        <td>mary@example.com</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>July</td>
-                                                        <td>Dooley</td>
-                                                        <td>july@example.com</td>
-                                                    </tr><tr>
-                                                            <td>John</td>
-                                                            <td>Doe</td>
-                                                            <td>john@example.com</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Mary</td>
-                                                            <td>Moe</td>
-                                                            <td>mary@example.com</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>July</td>
-                                                            <td>Dooley</td>
-                                                            <td>july@example.com</td>
-                                                        </tr><tr>
-                                                                <td>John</td>
-                                                                <td>Doe</td>
-                                                                <td>john@example.com</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Mary</td>
-                                                                <td>Moe</td>
-                                                                <td>mary@example.com</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>July</td>
-                                                                <td>Dooley</td>
-                                                                <td>july@example.com</td>
-                                                            </tr>
                     </tbody>
                 </table>
 
@@ -320,25 +177,8 @@
                 </form>
             </div>
         </div>
-
-        <div id="logout" class="tab">
-            <div class="container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris
-                    magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque
-                    non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum.
-                    Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit
-                    at bibendum eu, tristique eget risus. Integer aliquet quam ut elit suscipit, id interdum neque porttitor.
-                    Integer faucibus ligula.Quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt.
-                    Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit
-                    amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo
-                    viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo
-                    ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod.
-                    Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus. Tibulum consectetur scelerisque lacus,
-                    ac fermentum lorem convallis sed.</p>
-            </div>
-        </div>
     </div>
-    <footer>Made by a really cool dude :)</footer>
+    <footer class="metal">Made by a really cool dude ;)</footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -347,6 +187,8 @@
     <script src="C:/Users/Martin/Desktop/JS stuff/Project/jsScripts/submitScript.js"></script>
     <script src="C:/Users/Martin/Desktop/JS stuff/Project/jsScripts/datepicker.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="C:/Users/Martin/Desktop/JS stuff/Project/jsScripts/newTask.js"></script>
+    <script src="C:/Users/Martin/Desktop/JS stuff/Project/jsScripts/removetask.js"></script>
 </body>
 
 </html>
