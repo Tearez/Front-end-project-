@@ -384,3 +384,8 @@ td textarea {
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
   background-color: #eeeeee;
 }
+#home .container {
+  min-width: 100%;
+  line-height: 1.6;
+  font-size: 1.2em;
+}

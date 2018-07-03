@@ -1,3 +1,3 @@
 jQuery(document).ready(function () {
-    $("#home .container:even").css({'background-color': '#eeeeee', 'min-width': '100%'});
+    $("#home .container:even").css({'background-color': '#eeeeee'});
 });
