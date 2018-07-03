@@ -34,8 +34,8 @@
                         <a id="home-b" href="#home">
                             <span class="glyphicon glyphicon-home"></span> Home</a>
                     </li>
-                    <li>
-                        <a href="#tasks">
+                    <li style="display: none;">
+                        <a id="tasks" href="#tasks">
                             <span class="glyphicon glyphicon-th-list"></span> Tasks</a>
                     </li>
 
@@ -46,7 +46,8 @@
                             <span class="glyphicon glyphicon-log-in"></span> Login</a>
                     </li>
                     <li style="display: none;">
-                        <a id="logout-b" href="#logout"><span class="glyphicon glyphicon-log-out"></span> LogOut</a>
+                        <a id="logout-b" href="#logout">
+                            <span class="glyphicon glyphicon-log-out"></span> LogOut</a>
                     </li>
                 </ul>
             </div>
@@ -76,6 +77,8 @@
                     ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod.
                     Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus. Tibulum consectetur scelerisque lacus,
                     ac fermentum lorem convallis sed.</p>
+            </div>
+            <div class="container">
                 <p>Orci facilisis, dignissim tortor vitae, ultrices mi. Vestibulum a iaculis lacus. Phasellus vitae convallis
                     ligula, nec volutpat tellus. Vivamus scelerisque mollis nisl, nec vehicula elit egestas a. Sed luctus
                     metus id mi gravida, faucibus convallis neque pretium. Maecenas quis sapien ut leo fringilla tempor vitae
@@ -87,6 +90,8 @@
                     Vestibulum sit amet est mollis nulla tempus aliquet. Praesent luctus hendrerit arcu non laoreet. Morbi
                     consequat placerat magna, ac ornare odio sagittis sed. Donec vitae ullamcorper purus. Vivamus non metus
                     ac justo porta volutpat.</p>
+            </div>
+            <div class="container">
                 <p>Pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget sapien vel, porttitor bibendum
                     enim. Donec sed nibh vitae lorem porttitor blandit in nec ante. Pellentesque vitae metus ipsum. Phasellus
                     sed nunc ac sem malesuada condimentum. Etiam in aliquam lectus. Nam vel sapien diam. Donec pharetra id
@@ -98,6 +103,8 @@
                     In dapibus velit blandit pharetra tincidunt. Quisque non sapien nec lacus condimentum facilisis ut iaculis
                     enim. Sed viverra interdum bibendum. Donec ac sollicitudin dolor. Sed fringilla vitae lacus at rutrum.
                     Phasellus congue vestibulum ligula sed consequat.</p>
+            </div>
+            <div class="container">
                 <p>Enim arcu, interdum vel metus dignissim, venenatis feugiat purus. Nulla posuere orci ut leo sodales, sed
                     cursus dolor ornare. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                     mus. Etiam sit amet quam orci. Nulla sollicitudin lectus eget posuere venenatis. Sed vestibulum elementum
@@ -112,6 +119,8 @@
                     vel fermentum purus. Nullam interdum blandit turpis, id pellentesque massa feugiat at. Ut sed lectus
                     lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla
                     rutrum, ante quis convallis ultricies, magna quam rhoncus erat, in lacinia libero magna a ipsum.</p>
+            </div>
+            <div class="container">
                 <p>Fusce enim arcu, interdum vel metus dignissim, venenatis feugiat purus. Nulla posuere orci ut leo sodales,
                     sed cursus dolor ornare. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                     mus. Etiam sit amet quam orci. Nulla sollicitudin lectus eget posuere venenatis. Sed vestibulum elementum
@@ -123,7 +132,7 @@
 
         <div id="tasks" class="tab">
             <div class="container">
-                <button href="#" data-toggle="modal" data-target="#login-modal">New Task</button>
+                <button data-toggle="modal" data-target="#login-modal">New Task</button>
 
                 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                     <div class="modal-dialog">
@@ -131,11 +140,11 @@
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 <h2 class="modal-title">New Task</h4>
-                              </div>
+                            </div>
                             <br>
                             <form>
                                 <input id="task-title" class="form-control" type="text" name="name" placeholder="Task Title">
-                                <input id="task-desc" class="form-control" type="text" name="description" placeholder="Description">
+                                <textarea id="task-desc" class="form-control" type="text" name="description" placeholder="Desription"></textarea>
                                 <div class="form-group ">
                                     <input class="form-control" id="date" name="date" placeholder="Due Date (MM/DD/YYYY)" type="text" />
                                 </div>
@@ -145,19 +154,21 @@
                     </div>
                 </div>
 
-                <table class="table table-hover ">
-                    <thead class="metal">
-                        <tr>
-                            <th>Title</th>
-                            <th>Description</th>
-                            <th>Due Date</th>
-                            <th>Completed?</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="metal">
+                            <tr>
+                                <th style="width: 0;"></th>
+                                <th class="t-title">Title</th>
+                                <th class="t-description">Description</th>
+                                <th class="t-date">Due Date</th>
+                                <th class="t-button">Completed?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
@@ -178,7 +189,9 @@
             </div>
         </div>
     </div>
-    <footer class="metal">Made by a really cool dude ;)</footer>
+    <div class="footer metal">
+        <p>Made by a really cool dude ;)</p>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -189,6 +202,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
     <script src="C:/Users/Martin/Desktop/JS stuff/Project/jsScripts/newTask.js"></script>
     <script src="C:/Users/Martin/Desktop/JS stuff/Project/jsScripts/removetask.js"></script>
+    <script src="C:\Users\Martin\Desktop\JS stuff\Project\jsScripts\oddparagraphs.js"></script>
 </body>
 
 </html>

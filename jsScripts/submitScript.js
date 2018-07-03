@@ -7,6 +7,7 @@ jQuery(document).ready(function () {
         jQuery('.tabs ' + hrefVal).siblings().slideUp(500);
         jQuery('.tabs ' + hrefVal).delay(500).slideDown(500);
         $('.navbar-default .navbar-nav li #logout-b').parent('li').css('display', 'block');
-        $('.navbar-default .navbar-brand span').append('  Hello, ' + $username.val());
+        $('.navbar-default .navbar-nav li #tasks').parent('li').css('display', 'block');
+        $('.navbar-default .navbar-brand span').append('    Hello, ' + $username.val());
     });
 });
